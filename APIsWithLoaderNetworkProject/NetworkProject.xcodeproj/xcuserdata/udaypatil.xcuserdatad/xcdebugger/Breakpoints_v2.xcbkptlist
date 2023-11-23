@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9EF46BA4-FEE4-4C43-8879-6DB6C73CE3CD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B95CA3D-695E-4576-B948-B94E9D3C9386"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkProject/TeleportViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "didCompleteTaskWithResponse(data:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D22C328F-9062-46AC-92BB-795864E7AFB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkProject/NagerDateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "didCompleteTaskWithResponse(data:error:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D22C328F-9062-46AC-92BB-795864E7AFB6 - b7ad041ed3a9a9f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NetworkProject.NagerDateViewController.didCompleteTaskWithResponse(data: Swift.Optional&lt;Foundation.Data&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "NetworkProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/udaypatil/Documents/NetworkProject/NetworkProject/NagerDateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "D22C328F-9062-46AC-92BB-795864E7AFB6 - a089f613080e5809"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in NetworkProject.NagerDateViewController.didCompleteTaskWithResponse(data: Swift.Optional&lt;Foundation.Data&gt;, error: Swift.Optional&lt;Swift.Error&gt;) -&gt; ()"
+                  moduleName = "NetworkProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/udaypatil/Documents/NetworkProject/NetworkProject/NagerDateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
