@@ -490,7 +490,8 @@ import Foundation
 //print("tan45 is \(tan45)")
 
 //MARK: - Simple Types -   Strings --------------------------------------------
-// //Empty strings
+//MARK: - Simple Types - String -  Empty String --
+ //Empty strings
 // let someEmptyString = ""
 // let anotherEmptyString = String()
 // if someEmptyString.isEmpty {
@@ -499,7 +500,8 @@ import Foundation
 // if anotherEmptyString.isEmpty {
 //     print("another string is empty")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Character Count --
 // func reverse(_ word: String) -> String {
 //     //Characters count
 //     let charCount = word.count
@@ -514,7 +516,8 @@ import Foundation
 // let stringReverse = reverse("string")
 // //stringReverse is "gnirts"
 // print("stringReverse is \(stringReverse)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  SubString Searching -
 // let dataString = "Substring search"
 // if dataString.contains("string") {
 //     print("contain \"string\"")
@@ -525,7 +528,8 @@ import Foundation
 // if dataString.hasSuffix("search") {
 //     print("ends with \"search\"")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  SubString Index -
 // let data = "Substring index"
 // let range = data.range(of: "string")
 // let subString = data[range!.lowerBound...]
@@ -542,7 +546,8 @@ import Foundation
 //         return -1
 //     }
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  SubString replacement -
 // var startString = "3, 2, 1, go!"
 // startString = startString
 //     .replacing("1", with: "one")
@@ -550,7 +555,8 @@ import Foundation
 //     .replacing("3", with: "three")
 // //startString = "three, two, one, go!"
 // print("startString is '\(startString)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  SubString substring -
 // let str = "one way ticket"
 // // first method
 // let start = str.index(str.startIndex, offsetBy:4)
@@ -561,7 +567,8 @@ import Foundation
 // let way2 = String(arStr[4...6]) //"way"
 // print("way1 is '\(way1)'")
 // print("way2 is '\(way2)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  SubString inserting -
 // r dataString = "string"
 // var index = dataString.startIndex
 // dataString.insert(contentsOf: "Sub", at: index)
@@ -574,7 +581,8 @@ import Foundation
 // dataString.insert(contentsOf: " inserting", at: index)
 // //dataString is "Substring inserting!"
 // print("dataString is \(dataString)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  SubString removing -
 // var dataString = "Substring removing"
 // var start = dataString.index(
 //     dataString.startIndex, offsetBy: 9)
@@ -588,7 +596,8 @@ import Foundation
 // dataString.removeSubrange(start...end)
 // //dataString is "string"
 // print("dataString is \(dataString)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  String comparison -
 // let first = "A"
 // let second = "B"
 // let third = String("A")
@@ -601,7 +610,8 @@ import Foundation
 // areEqual = first == third
 // //areEqual is true
 // print("areEqual is \(areEqual)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  String Interpolation -
 // let fontSize = 14
 // let fontFamile = "Arial"
 // let style1 = "font-size: \(fontSize)font-family: \"\(fontFamile)\""
@@ -610,7 +620,8 @@ import Foundation
 // //style2 is "font-size: 14font-family: "Arial""
 // print("style1 is \(style1)")
 // print("style2 is \(style2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Converting to number -
 // //to Int
 // let strNumber = "42"
 // let number: Int = Int(strNumber)!
@@ -627,7 +638,8 @@ import Foundation
 // formatter.decimalSeparator = ","
 // let half = formatter.number(from: strHalf)!.doubleValue
 // print("\(number) - \(pi) - \(exp) - \(half)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Iterating over string -
 // let str = "level"
 // let reverseStr = str.reversed()
 // for c in reverseStr {
@@ -637,7 +649,8 @@ import Foundation
 // for (i, c) in str.enumerated() {
 //     print("str[\(i)] = \(c)")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Change the case of characters -
 // let str = "Lower and upper"
 // let lower = str.lowercased()
 // //lower is "lower and upper"
@@ -648,13 +661,15 @@ import Foundation
 // print("lower is '\(lower)'")
 // print("upper is '\(upper)'")
 // print("capitalize is '\(capitalize)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Removing spaces -
 // let str = "  Spaces  "
 // let trimStr = str
 //     .trimmingCharacters(in: .whitespaces)
 // //trimStr is "Spaces"
 // print("\"\(trimStr)\"")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Spliting into an Array -
 // let strData = "1981|Kim Victorya|engineer"
 // let arrData = strData.split(separator: "|")
 //     .map{ String($0) }
@@ -667,7 +682,8 @@ import Foundation
 // print("year is \(year)")
 // print("name is '\(name)'")
 // print("position is '\(position)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Characters replacement -
 // var str = "1-3-2"
 // //str[2] = "3" //<-Error
 // //str.characters[2] = "3" //<-Error
@@ -676,7 +692,8 @@ import Foundation
 // str = String(arr)
 // //str is "1-2-3"
 // print("str is \(str)")K.
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Replacing Multiple Characters -
 // var str = "1-/[=2=/]-3"
 // let separators = ["/", "=", "[", "]"]
 // let arStr = str
@@ -685,7 +702,8 @@ import Foundation
 // str = arStr.joined(separator: "")
 // //str is "1-2-3"
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  String Concatenating -
 // let s1 = "three"
 // let s2 = "two"
 // var s3 = s1 + ", " + s2
@@ -693,16 +711,19 @@ import Foundation
 // let sGo = s3 + ", " + "go!"
 // //sGo is "three, two, one, go!"
 // print("sGo is \(sGo)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  String List Concatenating -
 // let numbers = ["one", "two", "three"]
 // let numberList = numbers.joined(separator: " ")
 // //numberList is "one two three"
 // print("numberList is \(numberList)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  String Multiplication -
 // let str = String(repeating: "7", count: 3)
 // // str is "777"
 // print("str is '\(str)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  String Padding -
 // let s = "123"
 // let count = 10
 // let padStart1 = s
@@ -717,7 +738,8 @@ import Foundation
 // print("padStart1 is '\(padStart1)'")
 // print("padStart2 is '\(padStart2)'")
 // print("padEnd1 is '\(padEnd1)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - String -  Escaping Characters -
 // // \t Insert a tab.
 // // \n Insert a newline.
 // // \r Insert a carriage return.
@@ -729,7 +751,8 @@ import Foundation
 // //str is "She said "Hello!" to me."
 // print("\"\(str1)\"")
 // print("\"\(str2)\"")
-// //-------------------------------------------------------------------------
+//MARK: - Simple Types -   Character Type --------------------------------------------
+//MARK: - Simple Types - Character types - Converting to String -
 // let charA: Character = "А"
 // let stringA: String = String(charA)
 // //stringA is "A"
@@ -737,7 +760,8 @@ import Foundation
 // //str is "character А"
 // print("str is \(str)")
 // print("stringA is \(stringA)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Character types - Getting from a String -
 // let str = "ABC"
 // let arr = Array(str)
 // let charA = arr[0]
@@ -755,7 +779,8 @@ import Foundation
 // print("charB is \(charB)")
 // print("charC is \(charC)")
 // print("charList is \(charList)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Character types - Converting to a number and back -
 // let charA: Character = "A"
 // var utf16Value = charA.utf16.first!
 // //utf16Value is 66
@@ -764,7 +789,8 @@ import Foundation
 // //charB is "B"
 // print("utf16Value is \(utf16Value)")
 // print("charB is \(charB)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Character types - Escape Characters -
 // // ' or \' for a single quote.
 // var c: Character = "\'"
 // // \" for a double quote.
@@ -788,10 +814,13 @@ import Foundation
 // // \x for a unicode character hex value.
 // c = "\u{A9}" //Copyright Symbol
 // print("\"\(c)\"")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Date and Time ---------------------------------------
+//MARK: - Simple Types - Date and Time - Getting of the current date -
 // let now = Date()
 // print(now)
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Date and Time - Converting to String -
 // let now = Date()
 // let shortStyle = DateFormatter.localizedString(from: now,
 //     dateStyle: DateFormatter.Style.short,
@@ -809,13 +838,15 @@ import Foundation
 // print("shortStyle = '\(shortStyle)'")
 // print("ruStyle = '\(ruStyle)'")
 // print("customStyle = '\(customStyle)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Date and Time - Conversion from a string  -
 // let stringDate = "1945-05-09 01:00"
 // let formatter = DateFormatter()
 // formatter.dateFormat = "yyyy-MM-dd hh:mm"
 // let victoryDate = formatter.date(from: stringDate)
 // print(victoryDate!)
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Date and Time - Comparision of dates -
 // let now = Date()
 // let calendar = Calendar.current
 // let yesterday = calendar.date(
@@ -830,7 +861,8 @@ import Foundation
 // print("areEqual is \(areEqual)")
 // print("areLater is \(areLater)")
 // print("areEarlier is \(areEarlier)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Date and Time - Date initialization -
 // let formatter = DateFormatter()
 // formatter.dateFormat = "yyyy-MM-dd"
 // let victoryDate1 = formatter.date(from: "1945-05-09")!
@@ -840,7 +872,8 @@ import Foundation
 //     hour: 0, minute: 0, second: 0, nanosecond: 0)!
 // print("victoryDate1 is \(victoryDate1)")
 // print("victoryDate2 is \(victoryDate2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Date and Time - Getting of year, month, day -
 // let now = Date()
 // let flags = NSCalendar.Unit(rawValue: UInt.max)
 // let components = (Calendar.current as NSCalendar)
@@ -859,7 +892,8 @@ import Foundation
 // print("minute = \(minute!)")
 // print("second = \(second!)")
 // print("dayOfWeek = \(dayOfWeek!)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Date and Time - Date Changing -
 // let now = Date()
 // let calendar = Calendar.current
 // let yesterday = calendar.date(
@@ -876,7 +910,8 @@ import Foundation
 // print("tomorrow = \(tomorrow)")
 // print("nextMonth = \(nextMonth)")
 // print("nextYear = \(nextYear)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Date and Time - The interval between the dates -
 // let calendar = Calendar.current
 // let components = DateComponents(
 //     year: 1945, month: 5, day: 9)
@@ -896,7 +931,9 @@ import Foundation
 // print("days is \(days!)")
 // print("minutes is \(minutes)")
 // print("seconds is \(seconds)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types -Boolean---------------------------------------
+//MARK: - Simple Types - Boolean - Getting Values -
 // let name = "Alex"
 // let nameExists = !name.isEmpty
 // //name exists is true
@@ -905,7 +942,8 @@ import Foundation
 // //isTen is false
 // print("nameExists is \(nameExists)")
 // print("isTen is \(isTen)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Boolean - Logical operations -
 // let value1 = true
 // let value2 = false
 // let valueNot1 = !value1
@@ -920,18 +958,22 @@ import Foundation
 // print("valueNot2 is \(valueNot2)")
 // print("valueAnd is \(valueAnd)")
 // print("valueOr is \(valueOr)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Boolean - Conversion from s string -
 // let str = "true"
 // let nsStr = str as NSString
 // let boolValue = nsStr.boolValue
 // //boolValue is true
 // print("boolValue is \(boolValue)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Boolean - Converting to String -
 // et sunIsStar = true
 // let str = "\(sunIsStar)"
 // //str is "true"
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Nullable Types -------------------------------------------
+//MARK: - Simple Types - Nullable Types - Initializations -
 // let number: Int? = 42
 // let nullInt: Int?  = nil
 // let pi: Double? = 3.14
@@ -944,7 +986,8 @@ import Foundation
 // print(charA!)
 // print(hasValue!)
 // print(String(describing: noValue))
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Nullable Types - Checking of presence of a value -
 // let n1: Int? = 42
 // var exists = n1 != nil
 // //exists is true
@@ -962,7 +1005,8 @@ import Foundation
 // }
 // //exists is true
 // print("exists is \(exists)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Simple Types - Nullable Types - Getting values -
 // let n1: Int? = 42
 // let value1 = n1!
 // //value1 is 42, Int
@@ -976,7 +1020,7 @@ import Foundation
 //     //charA is "A", Character
 //     print("charA is \(charA)")
 // }
-// //-------------------------------------------------------------------------
+//MARK: - Simple Types - Tuple -----------------------------------------------------
 // let one = (1, "one")
 // var number = one.0
 // //number is 1
@@ -993,7 +1037,10 @@ import Foundation
 // print("one is \(one)")
 // print("number is \(number)")
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections ------------------------------------------------------
+//MARK: - Arrays and Collections - Arrays -
+//MARK: - Arrays and Collections -Arrays - Arrays initialization -
 // /Empty array
 // let n1: [Int] = []
 // let n2 = [Int]()
@@ -1012,7 +1059,8 @@ import Foundation
 // print("n4 is \(n4)")
 // print("n5 is \(n5)")
 // print("n6 is \(n6)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Adding and removing of elements -
 // var primeNumbers = [2, 5, 7]
 // primeNumbers.append(11)
 // //primeNumbers is [2, 5, 7, 11]
@@ -1041,12 +1089,14 @@ import Foundation
 // primeNumbers.removeAll()
 // //primeNumbers is []
 // print(primeNumbers)
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Array length -
 // let numbers = [ 1, 2, 3 ]
 // let length = numbers.count
 // //length is 3
 // print("length is \(length)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Iterating over an array -
 // let numbers = [2, 3, 5, 7, 11, 13, 17]
 // var str1 = ""
 // for n in numbers {
@@ -1065,7 +1115,8 @@ import Foundation
 // print("str1 is \(str1)")
 // print("str2 is \(str2)")
 // print("str3 is \(str3)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Iterating over an array with index -
 // let numbers = [2, 3, 5, 7, 11, 13, 17]
 // //the first method
 // var str = ""
@@ -1087,7 +1138,8 @@ import Foundation
 // }
 // //str is "2 3 5 7 11 13 17"
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Iterating over an array(reverse) -
 // let numbers = [2, 3, 5, 7]
 // var str = ""
 // for n in numbers.reversed() {
@@ -1095,7 +1147,8 @@ import Foundation
 // }
 // //str is "7 5 3 2 "
 // print("str is '\(str)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Finging and Array Elements -
 // let numbers = [2, 3, 5, 7, 11, 13, 17]
 // let contain5 = numbers.contains(5)
 // //contain5 is true
@@ -1112,7 +1165,8 @@ import Foundation
 // print("contain10 is \(contain10)")
 // print("firstOver is \(firstOver7 ?? -1)")
 // print("lastOver5 is \(lastOver5 ?? -1)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Sorting of elements -
 // var numbers = [ 11, 2, 5, 7, 3 ]
 // //the first method
 // numbers.sort()
@@ -1126,12 +1180,14 @@ import Foundation
 // numbers.sort { $1 < $0 }
 // //numbers is [11, 7, 5, 3, 2]
 // print(numbers)+€Ùm
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Getting unique values -
 // let numbers: [Int] = [1, 3, 2, 1, 3]
 // let unique = Array(Set(numbers))
 // //unique is [2, 3, 1]
 // print("unique is \(unique)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - filtering of elements-
 // let numbers = [ 1, 2, 3, 4, 5 ]
 // let oddItems = numbers.filter({$0 % 2 == 1})
 // //oddItems is [ 1, 3, 5 ]
@@ -1150,19 +1206,22 @@ import Foundation
 //         age >= 18
 //     }
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Array Copying -
 // var numbers1: [Int] = [ 1, 2, 3, 4, 5 ]
 // let numbers2 = numbers1
 // numbers1[0] = 10
 // print("numbers1 is \(numbers1)")
 // print("numbers2 is \(numbers2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Array Merging -
 // let firstNumbers = [ 2, 3, 5 ]
 // let secondNumbers = [ 7, 11, 13 ]
 // let allNumbers = firstNumbers + secondNumbers
 // //allNumbers is [2, 3, 5, 7, 11, 13]
 // print("allNumbers is \(allNumbers)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Converting of an array -
 // let numbers = [ 1, 2, 3, 4, 5 ]
 // let numbers1 = numbers.map({ $0 * 3 })
 // //numbers is [ 3, 6, 9, 12, 15 ]
@@ -1174,7 +1233,8 @@ import Foundation
 // print("numbers1 is", numbers1)
 // print("numbers2 is", numbers2)
 // print("numbers3 is", numbers3)
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Sum of Elements -
 // let numbers = [2, 3, 5, 7, 11]
 // let numbersSum = numbers.reduce(0, +)
 // // numbersSum is 28
@@ -1183,13 +1243,15 @@ import Foundation
 // // stringsSum is 'ABC'
 // print("numbersSum is \(numbersSum)")
 // print("stringsSum is \(stringsSum)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Array with a default value -
 // let value = 5
 // let count = 3
 // let array = [Int](repeating: value, count: count)
 // //array is [5, 5, 5]
 // print("array is \(array)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Cheking eqality of arrays -
 // let n1 = [ 1, 2, 3 ]
 // let n2 = [ 1, 2, 3 ]
 // let n3 = [ 3, 2, 1 ]
@@ -1202,7 +1264,8 @@ import Foundation
 // print("equal1 is \(equal1)")
 // print("equal2 is \(equal2)")
 // print("equal3 is \(equal3)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Getting part of an array -
 // let numbers = [ 2, 3, 5, 7, 11 ]
 // let first2 = numbers.prefix(2)
 // //first2 is [ 2, 3 ] ArraySlice<Int>
@@ -1216,7 +1279,8 @@ import Foundation
 // print(last3, type(of: last3))
 // print(first3, type(of: first3))
 // print(last4, type(of: last4))
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Getting min and Max Values -
 // let numbers = [ 2, 3, 5, 7, 11 ]
 // let min = numbers.min()!
 // //min is 2
@@ -1224,7 +1288,8 @@ import Foundation
 // //max is 11
 // print("min is \(min)")
 // print("max is \(max)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - evrry() and some() methods -
 // let numbers = [ 1, 2, 3, 4, 5 ]
 // let allLess10 = numbers.allSatisfy { $0 < 10 }
 // //everyLess10 is true
@@ -1235,19 +1300,23 @@ import Foundation
 // print("allLess10 is \(allLess10)")
 // print("someMore3 is \(someMore3)")
 // print("allOdd is \(allOdd)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Dynamic Array -
 // let count = 15
 // var arInt = [Int](repeating: 0, count: count)
 // arInt[0] = 1
 // print(arInt)
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Arrays - Arrays comparing  -
 // let numbers1 = [ 1, 2, 4, 3 ]
 // let numbers2 = [ 1, 2, 3, 4, 5 ]
 // let diff = numbers2.difference(from: numbers1)
 // let numbers3 = numbers1.applying(diff) ?? []
 // print("numbers3 is", numbers3)
 // //numbers3 is [1, 2, 3, 4, 5]
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary -
+//MARK: - Arrays and Collections - Dictionary - Dictionary initialization -
 // //Empty dictionary
 // let d1 = [Int : String]()
 // let d2: [Int : String] = [:]
@@ -1265,7 +1334,8 @@ import Foundation
 // print("d4 is \(d4)")
 // print("d5 is \(d5)")
 // print("d5 is \(d6)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Get valule by key -
 // let d = [1 : "one", 2 : "two"]
 // let one = d[1]!
 // //one is "one"
@@ -1280,7 +1350,8 @@ import Foundation
 // print("two is \(two!)")
 // print("three is \(three ?? "nil")")
 // print("defaultValue is \(defaultValue)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Checking of presence of a key -
 // let dic: [Int : String?] = [
 //     1 : "one", 2 : nil]
 // let exists1 = dic[1] != nil
@@ -1292,7 +1363,8 @@ import Foundation
 // print("exists1 is \(exists1)")
 // print("exists2 is \(exists2)")
 // print("exists3 is \(exists3)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Adding and removing of an elements -
 // var dic = [Int : String]()
 // dic[1] = "one"
 // dic[2] = "two"
@@ -1315,7 +1387,8 @@ import Foundation
 // dic.removeAll()
 // //dic is empty
 // print("dic is \(dic)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Iternating over a dictionary -
 // let dic = [1 : "one", 2 : "two"]
 // var str = ""
 // for (key, value) in dic {
@@ -1331,7 +1404,8 @@ import Foundation
 // }
 // //str is "two, one"
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Amount of elements -
 // let dic = [1 : "one", 2 : "two"]
 // let count = dic.count
 // //count is 2
@@ -1339,7 +1413,9 @@ import Foundation
 // //isEmpty is false
 // print("count is \(count)")
 // print("isEmpty is \(isEmpty)")
-// //-------------------------------------------------------------------------
+/*It is preferable to use dic.isEmpty rather than dic.count > 0 because isEmpty is faster when the dictionary is full.*/
+
+//MARK: - Arrays and Collections - Dictionary - Defaultvalue -
 // let dic = [1: "A", 2: "B"]
 // let value1 = dic[3]
 // //value1 is nil
@@ -1354,41 +1430,48 @@ import Foundation
 // print("value1 is \(value1 ?? "nil")")
 // print("value2 is \(value2)")
 // print("charCounts is \(charCounts)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Getting of a list of keys-
 // let dic = [1 : "one", 2 : "two"]
 // let keys = dic.keys
 // //keys is [1, 2]
 // print("keys is \(keys)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Getting of a list of values-
 // let dic = [1 : "one", 2 : "two"]
 // let values = dic.values
 // //values is ["one", "two"]
 // print("values is \(values)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Filtering of elements -
 // let dic = [1: "one", 2: "two", 3: "three"]
 // let oddDic = dic.filter {
 //     $0.key % 2 == 1
 // }
 // //addDic is [3: "three", 1: "one"]
 // print(oddDic)
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Getting keys by value -
 // let dic = [1: "A", 2: "B", 3: "A"]
 // let value = "A"
 // let keys = (dic as NSDictionary)
 //     .allKeys(for: value)
 // //keys is [3, 1]
 // print("keys is \(keys)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - sort dictionary by keys-
 // let dic = [3: "three", 1: "one", 2: "two"]
 // let sortedDic = dic.sorted{ $0.0 < $1.0 }
 // //sortedDic is [1: one, 2: two, 3: three]
 // print(sortedDic)
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - sort dictionary by values-
 // let dic = [3: "B", 1: "C", 2: "A"]
 // let sortedDic = dic.sorted{ $0.1 < $1.1 }
 // //sortedDic is [2: "A", 3: "B", 1: "C"]
 // print(sortedDic)
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Converting of a dictionary -
 // let dic = [1: "one", 2: "two"]
 // let upperDic = dic.mapValues {
 //     $0.uppercased()
@@ -1399,7 +1482,8 @@ import Foundation
 // //charCodes is ["B": 67, "A": 66]
 // print("upperDic is", upperDic)
 // print("charCodes is", charCodes)
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - dictionary merge-
 // let d1 = [1: "one"]
 // let d2 = [2: "two"]
 // let d3 = [3: "three"]
@@ -1409,19 +1493,23 @@ import Foundation
 // d3.forEach { (key, value) in dAll[key] = value }
 // //dAll is [1: "one", 3: "three", 2: "two"]
 // print("dAll is \(dAll)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Dictionary - Grouping collection -
 // let numbers = [ 1, 2, 3, 4, 5 ]
 // let dic = Dictionary(grouping: numbers) {
 //     $0 % 2 == 0 ? "even" : "odd"
 // }
 // //dic1 is ["odd": [1, 3, 5], "even": [2, 4]]
 // print("dic is \(dic)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Sets -
+//MARK: - Arrays and Collections - Sets - Sets initialization -
 // let intSet: Set<Int> = [1, 2, 3]
 // let strSet: Set = ["one", "two", "three"]
 // print("intSet is \(intSet)")
 // print("strSet is \(strSet)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Sets - Search of element -
 // let chars: Set<Character> = ["A", "B", "C", "D"]
 // let containA = chars.contains("A")
 // //containA is true
@@ -1433,7 +1521,9 @@ import Foundation
 // print("containA is \(containA)")
 // print("containE is \(containE)")
 // print("containAll is \(containAll)")
-// //-------------------------------------------------------------------------
+
+
+//MARK: - Arrays and Collections - Sets - Sets Adding and removing of elements -
 // var set: Set<Character> = ["A", "B", "C"]
 // set.insert("D")
 // //set is ["A", "B", "C", "D"]
@@ -1447,7 +1537,8 @@ import Foundation
 // set.removeAll()
 // //set is []
 // print(set)
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Sets  - iterating over a set -
 // let chars: Set<Character> = ["A", "B", "C", "D"]
 // var str = ""
 // for c in chars {
@@ -1455,7 +1546,8 @@ import Foundation
 // }
 // //str is "B A C D"
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Sets - sets comparision -
 // let first: Set = [1, 2]
 // let second: Set = [1, 2]
 // let third: Set = [1, 2, 3]
@@ -1468,12 +1560,14 @@ import Foundation
 // print("isEqual is \(isEqual)")
 // print("isIntersects is \(isIntersects)")
 // print("isSubset is \(isSubset)")Zd
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Sets - filtering of elements -
 // let set: Set = [1, 2, 3]
 // let oddSet = set.filter { $0 % 2 == 1 }
 // //oddSet is [3, 1]
 // print("oddSet is \(oddSet)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Sets - Sorting of elements-
 // let chars: Set<Character> = ["A", "B", "C", "D"]
 // var str = ""
 // for c in chars {
@@ -1487,7 +1581,8 @@ import Foundation
 // }
 // //str is "A B C D"
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Sets - sets operations -
 // let first: Set = [1, 2, 3]
 // let second: Set = [3, 4, 5]
 // var third = first.union(second)
@@ -1502,12 +1597,14 @@ import Foundation
 // third = first.symmetricDifference(second)
 // //third is [1, 2, 4, 5]
 // print("third is \(third)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Sets - Converting of a set -
 // let set: Set = [1, 2, 3]
 // let set3 = set.map { $0 * 3 }
 // //set3 is [6, 9, 3]
 // print("set3 is \(set3)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Stack<T>(LIFO) -
 // struct Stack<Element> {
 //     var items = [Element]()
 //     mutating func push(_ item: Element) {
@@ -1536,7 +1633,8 @@ import Foundation
 // print("first is \(first)")
 // print("second is \(second)")
 // print("third is \(third)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Arrays and Collections - Queue<T>(FIFO) -
 // struct Queue<Element> {
 //     var items = [Element]()
 //     mutating func add(_ item: Element) {
@@ -1565,7 +1663,11 @@ import Foundation
 // print("first is \(first)")
 // print("second is \(second)")
 // print("third is \(third)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - ---------------------------------------------
+//MARK: - Control Flow - Conditional Statements -
+//MARK: - Control Flow - Conditional Statements - if/else statements-
+//MARK: - Control Flow - Conditional Statements - if/else statements- Valid Example -
 // func getLatitude() -> Int {
 //     return (-90...90).randomElement()!
 // }
@@ -1581,7 +1683,8 @@ import Foundation
 //     location = "not at the Equator or Pole"
 // }
 // print("latitude \(l): \(location)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Conditional Statements - if/else statements- Valid Example -
 // func getLatitude() -> Int {
 //     return (-90...90).randomElement()!
 // }
@@ -1597,10 +1700,12 @@ import Foundation
 //     location = "not at the Equator or Pole"
 // }
 // print("latitude \(l): \(location)")
-//
+
+//MARK: - Control Flow - Conditional Statements - if/else statements- isNot Valid Example -
 // if (latitude == 0) //Error: Expected '{' after 'if' condition
 //     location = "Equator"
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Conditional Statements - if/else statements- Complex Conditions -
 // let A = 3
 // let B = 5
 // let C = 7
@@ -1610,7 +1715,8 @@ import Foundation
 // if (!(A >= B || A >= C)) {
 //     print("A is the smallest")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Conditional Statements - if/else statements- Ternory Operator -
 // func getNumber() -> Int {
 //     return (-42...42).randomElement()!
 // }
@@ -1618,7 +1724,8 @@ import Foundation
 // let classify = (n > 0) ? "positive" : "negative"
 // //classify is "negative"
 // print("number \(n) is \(classify)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Conditional Statements - if/else statements- "if" with result-
 // func getLatitude() -> Int {
 //     return (-90...90).randomElement()!
 // }
@@ -1633,37 +1740,48 @@ import Foundation
 //     "not at the Equator or Pole"
 // }
 // print("latitude \(l): \(location)")
-// //-------------------------------------------------------------------------
-// func getLatitude() -> Int {
-//     return (-90...90).randomElement()!
-// }
-// let l = getLatitude()
-// let location = if l == 0 {
-//     "Equator"
-// } else if l == 90 {
-//     "north Pole"
-// } else if l == -90 {
-//     "south Pole"
-// } else {
-//     "not at the Equator or Pole"
-// }
-// print("latitude \(l): \(location)")
-// //-------------------------------------------------------------------------
-// func getLatitude() -> Int {
-//     return (-90...90).randomElement()!
-// }
-// let l = getLatitude()
-// let location = if l == 0 {
-//     "Equator"
-// } else if l == 90 {
-//     "north Pole"
-// } else if l == -90 {
-//     "south Pole"
-// } else {
-//     "not at the Equator or Pole"
-// }
-// print("latitude \(l): \(location)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Conditional Statements - Switch -
+//MARK: - Control Flow - Conditional Statements - Switch - Simple Conditions -
+//func getMonitorSize() -> Int {
+//    return (14...27).randomElement()!
+//}
+//var str: String;
+//let inchSize = getMonitorSize()
+//switch inchSize {
+//    case 14,15:
+//        str = "too small"
+//    case 16,17,18:
+//        str = "good for the past decade"
+//    case 19...23:
+//        str = "for office work"
+//    case 24...27:
+//        str = "great choice"
+//    default:
+//       str = ""
+//}
+//print("Monitor \(inchSize)\" is \(str)")
+
+//MARK: - Control Flow - Conditional Statements - Switch - Switch with result -
+//func getMonitorSize() -> Int {
+//    return (14...27).randomElement()!
+//}
+//let inchSize = getMonitorSize()
+//let str = switch inchSize {
+//    case 14,15:
+//        "too small"
+//    case 16,17,18:
+//        "good for the past decade"
+//    case 19...23:
+//        "for office work"
+//    case 24...27:
+//        "great choice"
+//    default:
+//        ""
+//}
+//print("Monitor \(inchSize)\" is \(str)")
+
+//MARK: - Control Flow - Conditional Statements - Switch - Example with tuple -
 // func getPoint() -> (Int, Int) {
 //     return (5, 5)
 // }
@@ -1683,7 +1801,8 @@ import Foundation
 // }
 // //str is (5, 5) point
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Conditional Statements - "guard statement" -
 // class Stack<T> {
 //     var items: [T?] = [T?]()
 //     func push(_ item: T) {
@@ -1704,7 +1823,9 @@ import Foundation
 // //n2 is nil
 // print("n1 is \(n1!)")
 // print("n2 is", n2 as Any)
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Loops -
+//MARK: - Control Flow - Loops - "for" loop -
 // var sum10 = 0
 // //C-style for statement is deprecated
 // for i in 1...10 {
@@ -1712,7 +1833,8 @@ import Foundation
 // }
 // //sum10 is 55
 // print("sum10 is \(sum10)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Loops - "for-in" loop -
 // var sum10 = 0
 // //C-style for statement is deprecated
 // for i in 1...10 {
@@ -1720,7 +1842,8 @@ import Foundation
 // }
 // //sum10 is 55
 // print("sum10 is \(sum10)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Loops - "while" loop -
 // var i = 5
 // var f5 = 1
 // while i > 1 {
@@ -1729,7 +1852,8 @@ import Foundation
 // }
 // //f5 is 120
 // print("f5 is \(f5)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Loops - "repeat while" loop -
 // var i = 7
 // var f7 = 1
 // repeat {
@@ -1738,7 +1862,8 @@ import Foundation
 // } while i > 0
 // //f7 is 5040
 // print("f7 is \(f7)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Loops - Endless Loop -
 // for () {
 //     //statements
 // }
@@ -1748,7 +1873,9 @@ import Foundation
 // repeat {
 //     //statements
 // } while true
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Interruption of control flow -
+//MARK: - Control Flow - Interruption of control flow - "continue" statement -
 // let numbers = [ 2, 3, 5, 7, 11, 13, 17, 19 ]
 // var str = ""
 // for i in 0 ..< numbers.count {
@@ -1759,7 +1886,8 @@ import Foundation
 // }
 // //str is "2-5-11-17"
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Interruption of control flow - "break" statement -
 // let numbers = [ 2, 3, 5, 7, 11, 13, 17, 19 ]
 // var str = ""
 // for number in numbers {
@@ -1770,7 +1898,8 @@ import Foundation
 // }
 // //str is "2-3-5-7"
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Interruption of control flow - "return" statement without return value-
 // func printSomeData(_ printAll: Bool) {
 //     printMainData()
 //     if !printAll {
@@ -1785,7 +1914,8 @@ import Foundation
 //     print("printOtherData")
 // }
 // printSomeData(true)
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Interruption of control flow - with return value -
 // func containNumber(_ numbers: [Int], _ number: Int) -> Bool {
 //     for currentNumber in numbers {
 //         if currentNumber == number {
@@ -1800,9 +1930,8 @@ import Foundation
 // let isContain4 = containNumber(numbers, 4)
 // //isContain4 is false
 // print("isContain2 is \(isContain2)")
-// print("isContain4 is \(isContain4)")
-//
-// //-------------------------------------------------------------------------
+
+//MARK: - Control Flow - Interruption of control flow - Labeled statement -
 // var firstMatchValue = -1
 // let array1 = [1, 2, 3]
 // let array2 = [2, 3, 4]
@@ -1816,7 +1945,11 @@ import Foundation
 // }
 // //firstMatchValue is 2
 // print(firstMatchValue)
-// //-------------------------------------------------------------------------
+// print("isContain4 is \(isContain4)")
+
+//MARK: - Classes - -----------------------------------------------------------------
+//MARK: - Class - Constructure -
+//MARK: - Class - Constructure - Optional parameter values -
 // class Man {
 //     var name: String
 //     var country: String
@@ -1842,13 +1975,15 @@ import Foundation
 // print(man2.name + " " + man2.country + "\n")
 // print(man3.name + " " + man3.country + "\n")
 // print(man4.name + " " + man4.country + "\n")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Constructure - Default constructure -
 // class Man {
 //     var name = ""
 // }
 // let man = Man()
 // print(man)
-//
+
+//MARK: - Class - Constructure - without any parameter -
 // class Man {
 //     var name: String
 //     init() {
@@ -1858,7 +1993,8 @@ import Foundation
 // let man = Man()
 // //man.name is "unknown"
 // print("name is \(man.name)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Constructure - with parameter -
 // class Man {
 //     var name: String
 //     init(name: String) {
@@ -1868,7 +2004,8 @@ import Foundation
 // let man = Man(name: "Alex")
 // //man.name is "Alex"
 // print("name is \(man.name)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Constructure - with parameter(without external names) -
 // class Man {
 //     var firstName: String
 //     var lastName: String
@@ -1879,7 +2016,8 @@ import Foundation
 // }
 // let man = Man("Victor", "Titov")
 // print("firstName is \(man.firstName)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Constructure - call of the parent constructure -
 // class Man {
 //     var name: String
 //     init (_ name: String) {
@@ -1895,7 +2033,8 @@ import Foundation
 // }
 // let employee = Employee("Max", "booker")
 // print("position is \(employee.position)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Constructure - Call of own constructure -
 // class Man {
 //     var name: String
 //     var country: String?
@@ -1909,7 +2048,8 @@ import Foundation
 // }
 // let man = Man("Vladimir", "Russia")
 // print("country is \(man.country!)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Constructure - Replacement of the parent constructure -
 // class Man {
 //     var name: String
 //     init (_ name: String) {
@@ -1926,7 +2066,9 @@ import Foundation
 // let employee = Employee("Max")
 // //employee.position is "unknown"
 // print("position is \(employee.position)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods -
+//MARK: - Class - Methods - With return Value -
 // class Calc {
 //     var lastSum = 0
 //     func getSum1(_ n1: Int, _ n2: Int) -> Int {
@@ -1945,7 +2087,8 @@ import Foundation
 // print("sum1 = \(sum1)")
 // print("sum2 = \(sum2)")
 // print("calc.lastSum = \(calc.lastSum)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods - Without any return Value -
 // class Calc {
 //     var lastSum = 0
 //     func getSum1(_ n1: Int, _ n2: Int) -> Int {
@@ -1964,7 +2107,8 @@ import Foundation
 // print("sum1 = \(sum1)")
 // print("sum2 = \(sum2)")
 // print("calc.lastSum = \(calc.lastSum)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods - Without any parameter -
 // class Greeting {
 //     func sayGoodby() {
 //         print("Goodby!")
@@ -1972,7 +2116,8 @@ import Foundation
 // }
 // let greeting = Greeting()
 // greeting.sayGoodby()
-//
+
+//MARK: - Class - Methods - Optional parameter values -
 // class Greeting {
 //     static func sayGoodby(_ message: String = "Goodby!") {
 //         print(message)
@@ -1985,7 +2130,8 @@ import Foundation
 // //printed "Goodby!"
 // Greeting.sayGoodby("Hi")
 // //printed "Hi"
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods - Array of parameters -
 // class Calc {
 //     func getAvg (_ values: Double...) -> Double {
 //         if values.isEmpty {
@@ -2002,7 +2148,9 @@ import Foundation
 // let avg = calc.getAvg(1, 2, 3, 4)
 // //avg is 2.5
 // print("avg is \(avg)")
-// //-------------------------------------------------------------------------
+
+
+//MARK: - Class - Methods - External parameter names -
 // class Greeting {
 //     func sayGoodby(to name1: String, and name2: String) {
 //         print("Goodby \(name1) and \(name2)")
@@ -2014,7 +2162,8 @@ import Foundation
 // let greeting = Greeting()
 // greeting.sayGoodby(to: "Fedor", and: "Alex")
 // //prints "Goodby Fedor and Alex"
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods - Omitting external parameters -
 // class Calc {
 //     func sum(_ n1: Int, _ n2: Int) -> Int {
 //         return n1 + n2
@@ -2024,7 +2173,8 @@ import Foundation
 // let value = calc.sum(3, 2)
 // //value is 5
 // print("value is \(value)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods -  variable parameters -
 // class Log {
 //     var lastData = ""
 //     func print5(_ data: inout String) {
@@ -2041,7 +2191,8 @@ import Foundation
 // log.print5(&data)
 // //printed "12345"
 // print("lastData = \(log.lastData)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods -  In/Out parameters -
 // class Swap {
 //     func strings(_ s1: inout String, _ s2: inout String) {
 //         let tmp = s1
@@ -2055,7 +2206,8 @@ import Foundation
 // swap.strings(&s1, &s2)
 // //s1 is "B", s2 is "A"
 // print("s1 is \(s1), s2 is \(s2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods -  Class Methods -
 // class Calc {
 //     class func getMin(_ values: Int...) -> Int {
 //         if values.count == 0 {
@@ -2073,7 +2225,8 @@ import Foundation
 // let min = Calc.getMin(3, 2, 5, 1, 4)
 // //min is 1
 // print("min is \(min)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods -  multiple return values -
 // class ArrayAssistant {
 //     private var data: [Int]
 //     init (_ data: [Int]) {
@@ -2097,7 +2250,8 @@ import Foundation
 // //result.last is 5
 // print("first = \(result.first)")
 // print("last = \(result.last)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Class - Methods - consuming functions -
 // struct SelfDestructingMessage: ~Copyable {
 //     private let text: String
 //     init(text: String) {
@@ -2113,7 +2267,9 @@ import Foundation
 // //message.read() //<- Error
 // /*message' consumed more than once
 // Consuming functions take full ownership of an object and manage its life cycle, unloading the object from memory after completing its work. */
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Properties -
+//MARK: - Classes - Properties - stored Properties -
 // class Point {
 //     var x: Int = 0
 //     var y: Int = 0
@@ -2124,7 +2280,8 @@ import Foundation
 // point.x = 3
 // point.y = 7
 // print("(\(point.x), \(point.y))")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Properties - Computed Properties -
 // class Square {
 //     var side: Double = 0
 //     var area: Double {
@@ -2143,7 +2300,8 @@ import Foundation
 // square.area = 9
 // //square.side is 3
 // print("side is \(square.side)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Properties - Type Properties -
 // class Lesson {
 //     //type property
 //     static var lessonsCount = 0
@@ -2156,7 +2314,8 @@ import Foundation
 // let lesson2 = Lesson()
 // //Lesson.lessonsCount is 2
 // print("lessonsCount is \(Lesson.lessonsCount)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Properties - Lazy Properties -
 // class FilmsList {
 //     init() {
 //         //some long operation
@@ -2170,7 +2329,8 @@ import Foundation
 // //It will be created after call filmList property
 // let filmList = player.filmsList
 // print("filmList is \(filmList)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Properties - Property observers -
 // class Cash {
 //     var sum: Double = 0.0 {
 //         willSet {
@@ -2190,7 +2350,8 @@ import Foundation
 // //cash sum: 300.0
 // //adds: 200.0
 // print("sum is \(cash.sum)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Properties - Read - Only Properties - Stored Properties -
 // class Cash {
 //     var sum: Double = 0.0 {
 //         willSet {
@@ -2210,7 +2371,8 @@ import Foundation
 // //cash sum: 300.0
 // //adds: 200.0
 // print("sum is \(cash.sum)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Properties - Read - Only Properties - Computed Properties -
 // class Сircle {
 //     var radius: Double = 0
 //     var area: Double {
@@ -2221,7 +2383,9 @@ import Foundation
 // circle.radius = 2
 // //circle.area is 12.56
 // print("area is \(circle.area)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Subscript/(indexer methods) -
+//MARK: - Classes - Subscript - with one parameter -
 // class PowerOfTwo {
 //     subscript(i: Int) -> Int {
 //         return Int(pow(Double(2), Double(i)))
@@ -2237,7 +2401,8 @@ import Foundation
 // print("p2 is \(p2)")
 // print("p8 is \(p8)")
 // print("p16 is \(p16)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Subscript - multiple parameters -
 // class Car {
 //     var model: String
 //     var year: Int
@@ -2283,7 +2448,8 @@ import Foundation
 // //priceRush is 16818
 // print("priceRAV4 is \(priceRAV4)")
 // print("priceRush is \(priceRush)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Subscript - with generic parameter -
 // class Country {
 //     var info: [String: Any]
 //     init(info: [String: Any]) {
@@ -2301,7 +2467,8 @@ import Foundation
 // //population is 66991000
 // print("name is \(name!)")
 // print("population is \(population!)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Subscript - Static subscript -
 // class Settings {
 //     private static var values = [String: Any]()
 //     public static subscript(_ name: String) -> Any? {
@@ -2317,7 +2484,8 @@ import Foundation
 // Settings["host"] = "192.168.100.1"
 // Settings["port"] = 3306
 // print("host is", Settings["host"]!)
-// //-------------------------------------------------------------------------
+//MARK: - Classes - Inheritence -
+//MARK: - Classes - Inheritence - Base Class -
 // class Shape {
 //     var lineCount: Int
 //     init(lineCount: Int) {
@@ -2334,7 +2502,8 @@ import Foundation
 // let square = Square(sideLength: 5)
 // //square.lineCount is 4
 // print("lineCount is \(square.lineCount)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - protocol inheritence -
 // protocol Shape {
 //     var lineCount: Int { get set }
 //     func getArуa() -> Int
@@ -2354,7 +2523,8 @@ import Foundation
 // let area = square.getArуa()
 // //area is 25
 // print("area is \(area)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Reduction to the base type -
 // class Shape {
 //     var name: String {
 //         return "Shape"
@@ -2373,7 +2543,8 @@ import Foundation
 // let name = shape.name
 // //name is "Square"
 // print("name is \(name)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Downcasting (as) -
 // class Shape { }
 // class Square: Shape { }
 // class RedSquare: Square { }
@@ -2384,7 +2555,8 @@ import Foundation
 // //redSquare is nil
 // print("shape is \(shape)")
 // print("redSquare is", redSquare ?? "nil")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - compatibility check (is) -
 // class Shape { }
 // class Square: Shape { }
 // class RedSquare: Square { }
@@ -2395,7 +2567,8 @@ import Foundation
 // //isRedSquare is false
 // print("isShape is \(isShape)")
 // print("isRedSquare is \(isRedSquare)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Method override -
 // class Shape {
 //     func getArуa() -> Int {
 //         return 0
@@ -2418,7 +2591,8 @@ import Foundation
 // let area = square.getArуa()
 // //area is 25
 // print("area is \(area)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - property override -
 // class Shape {
 //     var lineCount: Int {
 //         return 0
@@ -2432,7 +2606,8 @@ import Foundation
 // let square = Square()
 // //square.lineCount is 4
 // print("lineCount is \(square.lineCount)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Observers override -
 // class Shape {
 //     var lineCount = 0
 // }
@@ -2448,11 +2623,13 @@ import Foundation
 // let square = Square()
 // square.lineCount = 5
 // print("lineCount is \(square.lineCount)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Sealed class -
 // class Shape { }
 // final class Square: Shape { }
 // class RedSquare: Square { } //<- Error
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Sealed class members -
 // class Shape {
 //     func getArуa() -> Int {
 //         return 0
@@ -2473,7 +2650,8 @@ import Foundation
 // let area = square.getArуa()
 // //area is 16
 // print("area is \(area)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - private class memberse -
 // class Shape {
 //     static var maxUID = 0
 //     private var UID: Int
@@ -2498,13 +2676,15 @@ import Foundation
 // //uid = square.UID //<- Error
 // //because the source file is the same
 // print("uid is \(uid)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Definition and intialization -
 // //Definition
 // class SomeClass {}
 // //Initialization
 // let someClass = SomeClass()
 // print(someClass)
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Destructure -
 // class Resources {
 //     //It called automatically
 //     //when class instance is deallocated
@@ -2517,7 +2697,8 @@ import Foundation
 // }
 // let res = Resources()
 // print("res is \(res)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Events -
 // protocol GameListener {
 //     func gameStarted(_ name: String)
 // }
@@ -2556,7 +2737,8 @@ import Foundation
 // //statistic.startsCount is 2
 // print("lastGame is \(statistic.lastGame)")
 // print("startsCount is \(statistic.startsCount)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Constants -
 // class Calendar {
 //     let months = 12
 // }
@@ -2564,7 +2746,8 @@ import Foundation
 // let months = calendar.months
 // //months is 12
 // print("months is \(months)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Destructure Nested Class -
 // class SomeClass {
 //     func create() -> NestedClass {
 //         return NestedClass()
@@ -2576,7 +2759,8 @@ import Foundation
 // let nested2 = SomeClass.NestedClass()
 // print("nested1 is \(nested1)")
 // print("nested2 is \(nested2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Check for reference equality -
 // class Car {}
 // let car1 = Car()
 // let car2 = Car()
@@ -2587,7 +2771,8 @@ import Foundation
 // //equal1 is true
 // print("equal1 is \(equal1)")
 // print("equal2 is \(equal2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Create a copy of object -
 // class Shape: NSCopying {
 //     var lineCount: Int = 0
 //     var name: String = ""
@@ -2603,7 +2788,8 @@ import Foundation
 // let squareCopy = square.copy() as! Shape
 // print("lineCount is \(squareCopy.lineCount)")
 // print("name is \(squareCopy.name)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Type members -
 // class Config {
 //     //type constant
 //     static let maxConnections = 3
@@ -2620,7 +2806,8 @@ import Foundation
 // let connection = Config.getConnection()
 // //connection is "10.0.0.1:52"
 // print("connection is \(connection)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Class as function -
 // class Random {
 //     var lower: Int
 //     var upper: Int
@@ -2636,7 +2823,8 @@ import Foundation
 // print(random())
 // print(random())
 // print(random())
-// //-------------------------------------------------------------------------
+
+//MARK: - Classes - Inheritence - Key-Path Expression -
 // class Phone {
 //     var model: String?
 // }
@@ -2659,7 +2847,9 @@ import Foundation
 // phoneModel = petr[keyPath: keyPath]
 // //phoneModel is "iPhone X 256"
 // print("phoneModel is \(phoneModel!)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct -------------------------------------------------------------
+//MARK: - Struct - Definition and initialization -
 // struct Point {
 //     var x, y: Int
 // }
@@ -2668,7 +2858,8 @@ import Foundation
 // print("p1 is (\(p1.x), \(p1.y))")
 // let p2: Point
 // let x2 = p2.x //<- Error
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct - Constructures -
 // struct Point1 {
 //     var x: Int = 0
 //     var y: Int = 0
@@ -2691,7 +2882,8 @@ import Foundation
 // print("p1 is (\(p1.x), \(p1.y))")
 // print("p2 is (\(p2.x), \(p2.y))")
 // print("p3 is (\(p3.x), \(p3.y))")
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct - methods -
 // struct Point {
 //     var x, y: Int
 //     func toString() -> String {
@@ -2710,14 +2902,16 @@ import Foundation
 // //str2 is "x = 6 y = 1"
 // print("str1 is \(str1)")
 // print("str2 is \(str2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct - fields and properties -
 // struct ColorPoint {
 //     //In Swift there are no fields
 //     var x, y: Int
 //     //Property
 //     var Color: Brush
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct - constants -
 // struct BoldLine {
 //     let lineWidth = 10
 // }
@@ -2725,7 +2919,8 @@ import Foundation
 // let width = line.lineWidth
 // //width is 10
 // print("width is \(width)")
-//
+
+//MARK: - Struct - Subscript(indexer methods)
 // struct Alphabet {
 //     //without range check
 //     subscript(i: Int) -> Character {
@@ -2739,7 +2934,8 @@ import Foundation
 // //charE is "E"
 // print("charA is \(charA)")
 // print("charE is \(charE)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct - type members -
 // struct Setting {
 //     //type property
 //     static var mode: Int = 0
@@ -2752,7 +2948,8 @@ import Foundation
 // Setting.setNextMode()
 // //Setting.mode is 1
 // print("mode is \(Setting.mode)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct - Inheritence -
 // protocol PText {
 //     func toText() -> String
 // }
@@ -2764,7 +2961,8 @@ import Foundation
 // }
 // let point = Point(x: 2, y: 5)
 // print(point.toText())
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct - Structure inside the structure -
 // struct Point {
 //     var x, y: Int
 // }
@@ -2780,7 +2978,8 @@ import Foundation
 //     Size(width: 10, height: 12))
 // print("point.x is \(rect.point.x)")
 // print("size.width is \(rect.size.width)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Struct - Non- copyable structures -
 // struct Point: ~Copyable  {
 //     var x, y: Int
 // }
@@ -2790,7 +2989,8 @@ import Foundation
 // print("p2 is (\(p2.x), \(p2.y))")
 // //print("p2 is (\(p1.x), \(p1.y))") <- Error
 // /*An instance of a noncopyable type always has unique ownership, unlike normal Swift types which can be freely copied.*/
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Definition and initilaization -
 // enum Season {
 //     case summer, fall, winter, spring
 // }
@@ -2798,7 +2998,8 @@ import Foundation
 // let winter: Season = .winter
 // print("summer is \(summer)")
 // print("winter is \(winter)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Base Type -
 // enum Season: Int8 {
 //     case summer, fall, winter, spring
 // }
@@ -2817,21 +3018,24 @@ import Foundation
 // print("baseCenter is \(baseCenter)")
 // print("baseFall is \(baseFall)")
 // print("baseBusy is \(baseBusy)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Explicitly set base value -
 // enum Season: Int {
 //     case summer = 1, fall, winter, spring
 // }
 // let baseWinter = Season.winter.rawValue
 // //baseWinter is 3
 // print("baseWinter is \(baseWinter)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Initilaizing from a base value -
 // enum Season: Int {
 //     case summer, fall, winter, spring
 // }
 // let winter = Season(rawValue: 2)
 // //winter is Season.winter
 // print("winter is \(winter!)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Enum constructure  -
 // enum Season {
 //     case summer, fall, winter, spring, none
 //     init(name: String) {
@@ -2847,13 +3051,15 @@ import Foundation
 // let winter = Season(name: "winter")
 // //winter is Season.Winter
 // print("winter is \(winter)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Get the list of values -
 // enum Season: CaseIterable {
 //     case summer, fall, winter, spring
 // }
 // let values  = Season.allCases
 // print("values is \(values)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Base member value -
 // enum Season: Int {
 //     case summer, fall, winter, spring
 // }
@@ -2862,7 +3068,8 @@ import Foundation
 // //baseValue is 2
 // print("baseValue is \(baseValue)")
 // print("winter is \(winter)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Converting to a string-
 // enum Season {
 //     case summer, fall, winter, spring
 // }
@@ -2870,7 +3077,8 @@ import Foundation
 // let strValue = "\(winter)"
 // //strValue is "winter"
 // print("strValue is \(strValue)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Conversion from storage -
 // enum Season: String {
 //     case Summer, Fall, Winter, Spring
 // }
@@ -2878,7 +3086,8 @@ import Foundation
 // //winter is Season.Winter
 // print("winter is \(winter),",
 //     type(of: winter))
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Associated value storage -
 // enum ProgramInfo {
 //     case version(Int, Int, Int)
 //     case name(String)
@@ -2895,14 +3104,16 @@ import Foundation
 // printInfo(info)
 // info = ProgramInfo.version(3, 5, 25467)
 // printInfo(info)
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Enum Comparison -
 // enum Size: Comparable {
 //     case xs, s, m, l, xl
 // }
 // let small = Size.s
 // let lage = Size.l
 // print("is l > s:", lage > small)
-// //-------------------------------------------------------------------------
+
+//MARK: - Enumerations - Recursive enumeration -
 // indirect enum Shape {
 //     case point(Int, Int)
 //     case line(Shape, Shape)
@@ -2921,12 +3132,15 @@ import Foundation
 // let info = line.toString()
 // //info is "(3, 4) (7, 9)"
 // print("info is \(info)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol ------------------------------------------------------
+//MARK: - Protocol - Declaration and initialization -
 // protocol Printable {
 //     func print()
 // }
 // let printable = Printable() //<- Error
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Methods requirement -
 // protocol Car {
 //     func startEngine() -> Bool
 //     func stopEngine()
@@ -2948,7 +3162,8 @@ import Foundation
 // }
 // let car = SportCar()
 // print("started is \(car.startEngine())")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - propetiese requirement -
 // protocol Car {
 //     var engineVolume: Int { get set }
 //     var name: String { get }
@@ -2961,7 +3176,8 @@ import Foundation
 // }
 // let car = Airwave()
 // print("name is \(car.name)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Constructure requirement -
 // protocol List {
 //     init (itemCount: Int)
 // }
@@ -2973,7 +3189,8 @@ import Foundation
 // }
 // let list = SortedList(itemCount: 100)
 // print("item count: \(list.itemCount)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Subscript requirement -
 // protocol IntIndex {
 //     subscript(i: Int) -> Int {get}
 // }
@@ -2989,7 +3206,8 @@ import Foundation
 // //p16 is 65536
 // print("p8 is \(p8)")
 // print("p16 is \(p16)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Protocol inheritence -
 // protocol Vehicle {
 //     var maxSpeed: Int {get}
 // }
@@ -3009,7 +3227,8 @@ import Foundation
 // let maxSpeed = vehicle.maxSpeed
 // //maxSpeed is 85
 // print("maxSpeed is \(maxSpeed)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Protocol Composition -
 // protocol PId {
 //     var id: Int {get}
 // }
@@ -3032,7 +3251,8 @@ import Foundation
 // let bread = Goods(id: 1, price: 35.5)
 // let product = Product(info: bread)
 // product.showIdAndPrice()
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Conformance checking (is, as) -
 // protocol PUID {
 //     var id: Int {get}
 // }
@@ -3053,7 +3273,8 @@ import Foundation
 // print("isPUID is \(isPUID)")
 // print("isNamed is \(isNamed)")
 // print("name is \(name)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - protocol collection -
 // protocol Named {
 //     var name: String {get set}
 // }
@@ -3073,7 +3294,8 @@ import Foundation
 // let list = rows.map({$0.name}).joined(separator: ", ")
 // //list is Rose, Rome, Sirius
 // print("list is \(list)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Type extension -
 // protocol Cleanable {
 //     func Clear()
 // }
@@ -3089,7 +3311,8 @@ import Foundation
 // }
 // let list = IntList()
 // list.Clear()
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Prototocol extension -
 // protocol PCalc {
 //     func addition(_ a: Int, _ b: Int) -> Int
 // }
@@ -3107,11 +3330,13 @@ import Foundation
 // let value = calc.power(2, 8)
 // //value is 256
 // print("value is \(value)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Class only protocols -
 // protocol PClass: class {}
 // class SomeClass: PClass {}
 // struct SomeStruct: PClass {} //<- Error
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Optional requirements -
 // class Camera: NSObject {
 //     var enable: Bool = false
 // }
@@ -3131,7 +3356,8 @@ import Foundation
 //     camera.enable = true
 //     print("camera exists")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Associated types
 // protocol Stack {
 //     associatedtype ItemType
 //     func push(_ item: ItemType)
@@ -3160,7 +3386,8 @@ import Foundation
 // topItem = stack.topItem
 // //topItem is 1
 // print("topItem is \(topItem)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Mutating methods -
 // protocol Chain {
 //     mutating func next()
 // }
@@ -3176,7 +3403,8 @@ import Foundation
 // season.next()
 // //season is .Summer
 // print("season is \(season)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - protocol conformance adoption -
 // protocol Cleanable {
 //     func Clear()
 // }
@@ -3192,7 +3420,8 @@ import Foundation
 // let isCleanable = list is Cleanable
 // //isCleanable is true
 // print("isCleanable is \(isCleanable)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Protocol - Protocol extensions constraints -
 // protocol PText {
 //     func asText() -> String
 // }
@@ -3213,7 +3442,9 @@ import Foundation
 //     Row(id: 2, name: "two")]
 // let str = rows.asStrings()
 // print("str is \(str)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Generics Types ----------------------------------------------------
+//MARK: - Generics Types - generic collections -
 // //List of integer
 // var intList = Array<Int>()
 // intList.append(5)
@@ -3226,7 +3457,8 @@ import Foundation
 // var set = Set<Double>()
 // set.insert(3.14)
 // print("set is \(set)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Generics Types - generic Classes -
 // class Size<T> {
 //     var width: T
 //     var height: T
@@ -3246,7 +3478,8 @@ import Foundation
 // //textFloat is "[3.7 1.58]"
 // print("textInt is \(textInt)")
 // print("textFloat is \(textFloat)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Generics Types - generic methods -
 // func swap<T>(_ a: inout T, _ b: inout T) {
 //     let tmp = a
 //     a = b
@@ -3262,7 +3495,8 @@ import Foundation
 // //s1 is "dog" and s2 is "cat"
 // print("\(n1), \(n2)")
 // print("\(s1), \(s2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Generics Types - protocol compliance -
 // @objc protocol Vehicle {
 //     func Test()
 // }
@@ -3287,7 +3521,8 @@ import Foundation
 // service.add(Car())
 // service.test()
 // //service.add(Truck())//<- Error
-// //-------------------------------------------------------------------------
+
+//MARK: - Generics Types - class  conformity -
 // class Vehicle {
 //     func Test() {
 //         print("test \(self)")
@@ -3314,7 +3549,8 @@ import Foundation
 // service.add(car)
 // service.test()
 // //service.add(truck)//<- Error
-// //-------------------------------------------------------------------------
+
+//MARK: - Generics Types - situation principle -
 // class Vehicle {
 //     func test() {
 //         print("test \(self)")
@@ -3332,7 +3568,9 @@ import Foundation
 // for vehicle in list {
 //     vehicle.test()
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions ----------------------------------------------------------
+//MARK: - Functions - with return values -
 // func getSum(_ n1: Int, _ n2: Int) -> Int {
 //     return n1 + n2
 // }
@@ -3346,12 +3584,14 @@ import Foundation
 // //div is 1
 // print("sum is \(sum)")
 // print("div is \(div)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions -without any return values -
 // func add3AndPrint(value: Int) {
 //     print(value + 3)
 // }
 // add3AndPrint(value: 5)
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions - multiple return values
 // func getFirstLast(_ ar: [Int]) -> (first: Int, last: Int) {
 //     var first = -1
 //     var last = -1
@@ -3367,12 +3607,14 @@ import Foundation
 // //result.last is 5
 // print("first = \(result.first)")
 // print("last = \(result.last)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions - without parameter -
 // func sayGoodby() {
 //     print("Goodby!")
 // }
 // sayGoodby()
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions - Arry of parameters -
 // func getAvg (_ values: Double...) -> Double {
 //     if values.isEmpty {
 //         return 0
@@ -3386,7 +3628,8 @@ import Foundation
 // let avg = getAvg(1, 2, 3, 4)
 // //avg is 2.5
 // print(avg)
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions - in/Out parameters -
 // func swapStrings(_ s1: inout String, _ s2: inout String) {
 //     let tmp = s1
 //     s1 = s2
@@ -3397,7 +3640,8 @@ import Foundation
 // swapStrings(&s1, &s2)
 // //s1 is "B", s2 is "A"
 // print("s1 is \(s1), s2 is \(s2)")
-//
+
+//MARK: - Functions - variable parameter -
 // func print5(_ data: inout String) {
 //     if data.count > 5 {
 //         let end = data.index(data.startIndex, offsetBy: 4)
@@ -3408,7 +3652,8 @@ import Foundation
 // var data = "1234567"
 // print5(&data)
 // //printed "12345"
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions - optional parameter values -
 // func sayGoodby(_ message: String = "Goodby!") {
 //     print(message)
 // }
@@ -3416,20 +3661,23 @@ import Foundation
 // //printed "Goodby!"
 // sayGoodby("see you")
 // //printed "see you"
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions - External parameter names -
 // func sayGoodby(to name1: String, and name2: String) {
 //     print("Goodby \(name1) and \(name2)")
 // }
 // sayGoodby(to: "Fedor", and: "Alex")
 // //prints "Goodby Fedor and Alex"
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions - Ommiting external parameters -
 // func sum(_ n1: Int, _ n2: Int) -> Int {
 //     return n1 + n2
 // }
 // let value = sum(3, 2)
 // //min is 1
 // print(value)
-// //-------------------------------------------------------------------------
+
+//MARK: - Functions - recirsion -
 // func fibonacci(_ x: Int) -> Int
 // {
 //     if x <= 2 {
@@ -3440,7 +3688,9 @@ import Foundation
 // let f10 = fibonacci(10)
 // //f10 is 55
 // print("f10 is \(f10)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  ----------------------------------------------------------
+//MARK: - Closures  - with one parameter -
 // //explicitly specify return type
 // let powOfTwo = {
 //     (power: Int) -> Int in Int(pow(2.0, Double(power)))
@@ -3455,23 +3705,27 @@ import Foundation
 // //pow3 is 27.0
 // print(pow8)
 // print(pow3)
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - with multiple  parameter -
 // let avgFunc = { (a, b) in (a + b) / 2 }
 // let avg = avgFunc(3, 5)
 // //avg is 4
 // print("avg is \(avg)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - without return value -
 // let add2AndPrint = { a in print(a + 2) }
 // add2AndPrint(5)
 // //printed 7
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - function as a parameter -
 // var numbers = [2, 3, 1]
 // numbers.sort(by: {(a, b) in a > b})
 // //or
 // numbers.sort{$0 > $1}
 // //numbers is [3, 2, 1]
 // print("numbers is \(numbers)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - void function as parameter -
 // func checkAndProcess(_ number: Int, process: (Int) -> Void) {
 //     if number < 10 {
 //         process(number)
@@ -3482,7 +3736,8 @@ import Foundation
 // }
 // checkAndProcess(5, process: process)
 // //printed: 50
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - function as a return value -
 // func makeSum() -> (_ a: Int, _ b: Int) -> Int {
 //     return { (a, b) in a + b }
 // }
@@ -3490,7 +3745,8 @@ import Foundation
 // let sum = sumFunc(5, 8)
 // //sum is 13
 // print("sum is \(sum)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - with multiple operators -
 // struct Point {
 //     var x: Double
 //     var y: Double
@@ -3505,7 +3761,8 @@ import Foundation
 // let distance = getDistance(point1, point2)
 // //distance is 7.071
 // print("distance is \(distance)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - capture of variables -
 // func makeWallet(_ sum: Int) -> (_ pay: Int) -> Int {
 //     var result = sum
 //     return { pay in
@@ -3526,13 +3783,15 @@ import Foundation
 // balance = payFromWallet1(150)
 // //balance is 800
 // print("balance is \(balance)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - modify captured variables -
 // var x = 5
 // let addYtoX = { y in x += y }
 // addYtoX(3)
 // //x is 8
 // print("x is \(x)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - Currying -
 // func carry<A, B, C>(_ f: @escaping (A, B) -> C) -> (A) -> (B) -> C {
 //     return { a in { b in f(a, b) }}
 // }
@@ -3552,7 +3811,8 @@ import Foundation
 // print("n1 is \(n1)")
 // print("n2 is \(n2)")
 // print("n3 is \(n3)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  -recursion -
 // var fibonacci: ((Int) -> Int)!
 // fibonacci = {
 //     x in x <= 2 ? 1 :
@@ -3561,7 +3821,8 @@ import Foundation
 // let f10 = fibonacci(10)
 // //f10 is 55
 // print("f10 is \(f10)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  -memorization -
 // func fibonacci(_ x: Int) -> Int {
 //     x <= 2 ? 1 : fibonacci(x - 1) + fibonacci(x - 2)
 // }
@@ -3596,7 +3857,8 @@ import Foundation
 // print("seconds is \(seconds)")
 // //f38 is 39088169
 // //seconds is 0.6545610427856445
-// //-------------------------------------------------------------------------
+
+//MARK: - Closures  - Memorization (Recursive) -
 // func memoize<I: Hashable, U>(_ fun: @escaping ((I)->U, I) -> U) -> (I)->U {
 //     var memo = [I: U]()
 //     var memoFun: ((I) -> U)!
@@ -3630,7 +3892,9 @@ import Foundation
 // print("seconds is \(seconds)")
 // // f38 is 39088169
 // // seconds is 1.0728836059570312e-06
-// //-------------------------------------------------------------------------
+
+//MARK: - Multithreading Operations ------------------------------------------
+//MARK: - Multithreading Operations - Starting a new thread -
 // func add(_ a: Int, _ b: Int) -> Int {
 //     sleep(3)
 //     return a + b
@@ -3645,6 +3909,8 @@ import Foundation
 // //printed:
 // //main thread
 // //result: 8
+
+//MARK: - Multithreading Operations - Asynchronous call -
 // //-------------------------------------------------------------------------
 // let action = {(i: Int) in
 //     Task {
@@ -3657,7 +3923,8 @@ import Foundation
 // //Run closure with new thread
 // action(5)
 // print("main thread")
-// //-------------------------------------------------------------------------
+
+//MARK: - Multithreading Operations - Asynchronous call with a result -
 // let add = {(_ a: Int, _ b: Int) in
 //     return Task {() -> Int in
 //         try await Task.sleep(for: .seconds(3))
@@ -3670,7 +3937,8 @@ import Foundation
 //     print("result is", result)
 // }
 // print("main thread")
-// //-------------------------------------------------------------------------
+
+//MARK: - Multithreading Operations - Synchrnization with the main thread -
 // class ViewController: UIViewController {
 //     //...
 //     func add(_ a: Int, _ b: Int) -> Int {
@@ -3693,7 +3961,8 @@ import Foundation
 //         Task { await calculate(3, 5) }
 //     }
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Multithreading Operations - Keyword "async" and "await"-
 // func add(_ a: Int, _ b: Int) async -> Int {
 //     sleep(3)
 //     return a + b
@@ -3713,7 +3982,9 @@ import Foundation
 //     await startAsync()
 // }
 // startTask()
-// //-------------------------------------------------------------------------
+
+//MARK: - Error Handling ---------------------------------------------------
+//MARK: - Error Handling - catch all exceptions -
 // enum Exception: Error {
 //     case isNil, isEmpty
 // }
@@ -3731,7 +4002,8 @@ import Foundation
 // catch {
 //     print("Error happened")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Error Handling - catch the specific exception -
 // enum Exception: Error {
 //     case isNil, isEmpty
 // }
@@ -3762,7 +4034,8 @@ import Foundation
 //     print("please pass an array")
 // }
 // catch {}
-// //-------------------------------------------------------------------------
+
+//MARK: - Error Handling -Throw an exception -
 // class Car{}
 // struct Exception: Error {
 //     var message: String
@@ -3784,7 +4057,8 @@ import Foundation
 //     //e.message is "No cars for sale"
 // }
 // catch {}
-// //-------------------------------------------------------------------------
+
+//MARK: - Error Handling - Re-throw exceptions -
 // enum Exception: Error {
 //     case text
 // }
@@ -3804,7 +4078,8 @@ import Foundation
 // catch let error {
 //     print("Exception:", error)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Error Handling - Define an exception type -
 // //struct error type
 // struct StructError: Error {
 //     var message: String
@@ -3823,7 +4098,8 @@ import Foundation
 // throw StructError(message: "Struct error")
 // throw ClassError(message: "Class error")
 // throw EnumError.accessDenied
-// //-------------------------------------------------------------------------
+
+//MARK: - Error Handling - Guaranteed code execution -
 // enum Exception: Error {
 //     case text
 // }
@@ -3844,7 +4120,8 @@ import Foundation
 // //printed: "catch" and "defer"
 // try! throwIfTrue(false)
 // //printed only "defer"
-// //-------------------------------------------------------------------------
+
+//MARK: - Error Handling - method throwing an exception -
 // enum Exception: Error {
 //     case text
 // }
@@ -3853,7 +4130,9 @@ import Foundation
 // func methodWithException() throws {
 //     throw Exception.text
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Regular exeption ---------------------------------------------------
+//MARK: - Regular exeption - Search for a match -
 // let data = "Pi is equal to 3.14"
 // let pattern = /\d+\.\d+/
 // if let match = try! pattern.firstMatch(in: data) {
@@ -3861,14 +4140,16 @@ import Foundation
 //     //pi is 3.14
 //     print("pi is \(pi)")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Regular exeption - Search call matches -
 // let data = "Pi = 3.14, exponent = 2.718"
 // let pattern = /\d+\.\d+/
 // let ranges = data.ranges(of: pattern)
 // let values = ranges.map { data[$0] }
 // //values is ["3.14", "2.718"]
 // print("values is \(values)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Regular exeption - Check match string -
 // let data1 = "aaab"
 // let data2 = "aaaba"
 // let data3 = "bbba"
@@ -3882,7 +4163,8 @@ import Foundation
 // print("b1 is \(b1)")
 // print("b2 is \(b2)")
 // print("b3 is \(b3)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Regular exeption - Check match whole string -
 // let data1 = "aaab"
 // let data2 = "aaaba"
 // let pattern = /\Aa+b\Z/
@@ -3894,7 +4176,8 @@ import Foundation
 // //b2 is false
 // print("b1 is \(b1)")
 // print("b2 is \(b2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Regular exeption - Replacement of the match -
 // let data = "Pi = 3.14, exponent = 2.718"
 // //the first method (Swift 5.7)
 // let pattern1 = /\d+\.\d+/
@@ -3909,7 +4192,8 @@ import Foundation
 // //data2 is "Pi = <f>3.14</f>, exponent = <f>2.718</f>"
 // print("data1 is \(data1)")
 // print("data2 is \(data2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Regular exeption -Named group -
 // let strData = "1981|Kim Victorya|engineer"
 // let pattern = /(?<year>\d{4})\|(?<n>[\w\s]+)\|(?<p>.+)/
 // if let match = try! pattern.firstMatch(in: strData) {
@@ -3923,7 +4207,8 @@ import Foundation
 //     print("full_name is '\(full_name)'")
 //     print("position is '\(position)'")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Regular exeption - Regular expression options -
 // let data = "AaaA\r\naaaA"
 // let pattern = /a+/
 //     .ignoresCase()
@@ -3932,126 +4217,163 @@ import Foundation
 //     print("value is '\(match.0)'")
 // }
 // //value is "AaaA"
-// //-------------------------------------------------------------------------
-// let data = "AaaA\r\naaaA"
-// let pattern = /a+/
-//     .ignoresCase()
-//     .dotMatchesNewlines()
-// if let match = try! pattern.firstMatch(in: data) {
-//     print("value is '\(match.0)'")
-// }
-// //value is "AaaA"
-// //-------------------------------------------------------------------------
-// class Point {
-//     var x: Int
-//     var y: Int
-//     init(x: Int, y: Int) {
-//         self.x = x
-//         self.y = y
-//     }
-// }
-// //global function
-// func + (left: Point, right: Point) -> Point {
-//     return Point(x: left.x + right.x, y: left.y + right.y)
-// }
-// //global function
-// func += (left: inout Point, right: Point) {
-//     left = Point(x: left.x + right.x, y: left.y + right.y)
-// }
-// let p1 = Point(x: 1, y: 1)
-// let p2 = Point(x: 2, y: 2)
-// var p3 = p1 + p2
-// //p3.x is 3 and p3.y is 3
-// print("x = \(p3.x), y = \(p3.y)")
-// p3 += Point(x: 3, y: 5)
-// //p3.x is 6 and p3.y is 8
-// print("x = \(p3.x), y = \(p3.y)")
-// //-------------------------------------------------------------------------
-// class Point {
-//     var x: Int
-//     var y: Int
-//     init(x: Int, y: Int) {
-//         self.x = x
-//         self.y = y
-//     }
-// }
-// //global function
-// func == (left: Point, right: Point) -> Bool {
-//     return (left.x == right.x) && (left.y == right.y)
-// }
-// //global function
-// func != (left: Point, right: Point) -> Bool {
-//     return (left.x != right.x) || (left.y != right.y)
-// }
-// let p1 = Point(x: 1, y: 1)
-// let p2 = Point(x: 2, y: 2)
-// let p3 = Point(x: 1, y: 1)
-// let equal1 = p1 == p2
-// //equal1 is false
-// let equal2 = p1 == p3
-// //equal2 is true
-// let equal3 = p1 != p3
-// //equal3 is false
-// print("equal1 is \(equal1)")
-// print("equal2 is \(equal2)")
-// print("equal3 is \(equal3)")
-// //-------------------------------------------------------------------------
-// class Point {
-//     var x: Int
-//     var y: Int
-//     init(x: Int, y: Int) {
-//         self.x = x
-//         self.y = y
-//     }
-// }
-// //global function
-// func > (left: Point, right: Point) -> Bool {
-//     return (left.x > right.x) && (left.y > right.y)
-// }
-// //global function
-// func < (left: Point, right: Point) -> Bool {
-//     return (left.x < right.x) && (left.y < right.y)
-// }
-// let p1 = Point(x: 1, y: 2)
-// let p2 = Point(x: 2, y: 3)
-// let b1 = p1 > p2
-// //b1 is false
-// let b2 = p1 < p2
-// //b2 is true
-// print("b1 is \(b1)")
-// print("b2 is \(b2)")
-// //-------------------------------------------------------------------------
-// class Point {
-//     var x: Double
-//     var y: Double
-//     init(x: Double, y: Double) {
-//         self.x = x
-//         self.y = y
-//     }
-// }
-// infix operator ^
-// //global function
-// func ^ (p: Point, power: Double) -> Point {
-//     let x = pow(p.x, power)
-//     let y = pow(p.y, power)
-//     return Point(x: x, y: y)
-// }
-// postfix operator ^
-// //global function
-// postfix func ^ (p: inout Point) {
-//     let x = pow(p.x, p.x)
-//     let y = pow(p.y, p.y)
-//     p = Point(x: x, y: y)
-// }
-// var p1 = Point(x: 2, y: 3)
-// p1 = p1 ^ 3
-// //p1.x is 8.0 and p1.y is 27.0
-// var p2 = Point(x: 2, y: 3)
-// p2^
-// //p2.x is 4.0 and p2.y is 27.0
-// print("x = \(p1.x), y = \(p1.y)")
-// print("x = \(p2.x), y = \(p2.y)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Operator overloading ------------------------------------------------
+//MARK: - Operator overloading - Unary Operator -
+//class Point {
+//    var x: Int
+//    var y: Int
+//    init(x: Int, y: Int) {
+//        self.x = x
+//        self.y = y
+//    }
+//}
+////global function
+//prefix func ++ (p: inout Point) -> Point {
+//    p = Point(x: p.x + 1, y: p.y + 1)
+//    return p
+//}
+////global function
+//postfix func ++ (p: inout Point) -> Point {
+//    p = Point(x: p.x + 1, y: p.y + 1)
+//    return p
+//}
+////global function
+//prefix func - (p: Point) -> Point {
+//    let point = Point(x: -p.x, y: -p.y)
+//    return point
+//}
+//var p = Point(x: 1, y: 1)
+//let p1 = p++
+////p.x is 2, p.y is 2
+//let p2 = ++p
+////p.x is 3, p.y is 3
+//p = -p
+////p.x is -3, p.y is -3
+//let p3 = -p
+////p.x is 3, p.y is 3
+//print("x = \(p.x), y = \(p.y)")
+//print("x = \(p1.x), y = \(p1.y)")
+//print("x = \(p2.x), y = \(p2.y)")
+//print("x = \(p3.x), y = \(p3.y)")
+
+//MARK: - Operator overloading - Binary Operator -
+//class Point {
+//    var x: Int
+//    var y: Int
+//    init(x: Int, y: Int) {
+//        self.x = x
+//        self.y = y
+//    }
+//}
+////global function
+//func + (left: Point, right: Point) -> Point {
+//    return Point(x: left.x + right.x, y: left.y + right.y)
+//}
+////global function
+//func += (left: inout Point, right: Point) {
+//    left = Point(x: left.x + right.x, y: left.y + right.y)
+//}
+//let p1 = Point(x: 1, y: 1)
+//let p2 = Point(x: 2, y: 2)
+//var p3 = p1 + p2
+////p3.x is 3 and p3.y is 3
+//print("x = \(p3.x), y = \(p3.y)")
+//p3 += Point(x: 3, y: 5)
+////p3.x is 6 and p3.y is 8
+//print("x = \(p3.x), y = \(p3.y)")
+
+//MARK: - Operator overloading - Equiavalence Operators -
+//class Point {
+//    var x: Int
+//    var y: Int
+//    init(x: Int, y: Int) {
+//        self.x = x
+//        self.y = y
+//    }
+//}
+////global function
+//func == (left: Point, right: Point) -> Bool {
+//    return (left.x == right.x) && (left.y == right.y)
+//}
+////global function
+//func != (left: Point, right: Point) -> Bool {
+//    return (left.x != right.x) || (left.y != right.y)
+//}
+//let p1 = Point(x: 1, y: 1)
+//let p2 = Point(x: 2, y: 2)
+//let p3 = Point(x: 1, y: 1)
+//let equal1 = p1 == p2
+////equal1 is false
+//let equal2 = p1 == p3
+////equal2 is true
+//let equal3 = p1 != p3
+////equal3 is false
+//print("equal1 is \(equal1)")
+//print("equal2 is \(equal2)")
+//print("equal3 is \(equal3)")
+
+//MARK: - Operator overloading - Comparison Operators -
+//class Point {
+//    var x: Int
+//    var y: Int
+//    init(x: Int, y: Int) {
+//        self.x = x
+//        self.y = y
+//    }
+//}
+////global function
+//func > (left: Point, right: Point) -> Bool {
+//    return (left.x > right.x) && (left.y > right.y)
+//}
+////global function
+//func < (left: Point, right: Point) -> Bool {
+//    return (left.x < right.x) && (left.y < right.y)
+//}
+//let p1 = Point(x: 1, y: 2)
+//let p2 = Point(x: 2, y: 3)
+//let b1 = p1 > p2
+////b1 is false
+//let b2 = p1 < p2
+////b2 is true
+//print("b1 is \(b1)")
+//print("b2 is \(b2)")
+
+//MARK: - Operator overloading - Custom Operators -
+//class Point {
+//    var x: Double
+//    var y: Double
+//    init(x: Double, y: Double) {
+//        self.x = x
+//        self.y = y
+//    }
+//}
+//infix operator ^
+////global function
+//func ^ (p: Point, power: Double) -> Point {
+//    let x = pow(p.x, power)
+//    let y = pow(p.y, power)
+//    return Point(x: x, y: y)
+//}
+//postfix operator ^
+////global function
+//postfix func ^ (p: inout Point) {
+//    let x = pow(p.x, p.x)
+//    let y = pow(p.y, p.y)
+//    p = Point(x: x, y: y)
+//}
+//var p1 = Point(x: 2, y: 3)
+//p1 = p1 ^ 3
+////p1.x is 8.0 and p1.y is 27.0
+//var p2 = Point(x: 2, y: 3)
+//p2^
+////p2.x is 4.0 and p2.y is 27.0
+//print("x = \(p1.x), y = \(p1.y)")
+//print("x = \(p2.x), y = \(p2.y)")
+
+//MARK: - Work with Files -----------------------------------------------------
+//MARK: - Work with Files - Basic operations -
+//MARK: - Work with Files - Basic operations - Check if the file exists-
 // let fileManager = FileManager.default
 // let dir = fileManager.urls(
 //     for: .documentDirectory,
@@ -4059,7 +4381,8 @@ import Foundation
 // let url = dir.appendingPathComponent("file.txt")
 // let exists = fileManager.fileExists(atPath: url.path)
 // print(exists)
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - Delete a file-
 // let fileManager = FileManager.default
 // let dir = fileManager.urls(
 //     for: .documentDirectory,
@@ -4071,7 +4394,8 @@ import Foundation
 // } catch let e {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - file copying -
 // let fileManager = FileManager.default
 // let dir = fileManager.urls(
 //     for: .documentDirectory,
@@ -4084,7 +4408,8 @@ import Foundation
 // } catch let e {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - file moving -
 // let fileManager = FileManager.default
 // let dir = fileManager.urls(
 //     for: .documentDirectory,
@@ -4097,7 +4422,8 @@ import Foundation
 // } catch let e {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - getting file properties-
 // let fileManager = FileManager.default
 // let dir = fileManager.urls(
 //     for: .documentDirectory,
@@ -4127,7 +4453,8 @@ import Foundation
 // } catch let e {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - Getting the work Directory -
 // func getWorkPath() -> URL {
 //     return FileManager.default.urls(
 //         for: .documentDirectory,
@@ -4135,7 +4462,8 @@ import Foundation
 // }
 // let workPath = getWorkPath()
 // print(workPath.relativePath)
-//
+
+//MARK: - Work with Files - Basic operations - Create a directory -
 // let workDir = FileManager.default.urls(
 //     for: .documentDirectory,
 //     in: .userDomainMask).first!
@@ -4149,7 +4477,8 @@ import Foundation
 // } catch let e as NSError {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - delete a directory -
 // let fileManager = FileManager.default
 // let dir = fileManager.urls(
 //     for: .documentDirectory,
@@ -4161,7 +4490,8 @@ import Foundation
 // } catch let e {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - copy a directory -
 // let fileManager = FileManager.default
 // let dir = fileManager.urls(
 //     for: .documentDirectory,
@@ -4174,7 +4504,8 @@ import Foundation
 // } catch let e {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - list files  in the directory  -
 // let fileManager = FileManager.default
 // let dir = fileManager.urls(
 //     for: .documentDirectory,
@@ -4190,14 +4521,17 @@ import Foundation
 // } catch let e {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Basic operations - combining to parts of a path -
 // let workDir = FileManager.default.urls(
 //     for: .documentDirectory,
 //     in: .userDomainMask).first!
 // //Merging the working dir and the "Data" subdir
 // let dataDir = workDir.appendingPathComponent("Data")
 // print(dataDir)
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Text files -
+//MARK: - Work with Files - Text files - Read from a file -
 // let fileName = "file.txt"
 // let dir = FileManager.default.urls(
 //     for: .documentDirectory,
@@ -4210,7 +4544,8 @@ import Foundation
 // } catch(let e) {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Text files - write to a file -
 // let fileName = "file.txt"
 // let text = "Line 1\nLine 2"
 // let dir = FileManager.default.urls(
@@ -4224,7 +4559,8 @@ import Foundation
 // } catch(let e) {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Text files - append text to a file -
 // let fileName = "file.txt"
 // let text = "\nadded text"
 // let data = text.data(
@@ -4244,7 +4580,9 @@ import Foundation
 //         print("File write error!")
 //     }
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Binary files -----------------------------------
+//MARK: - Work with Files - Binary files - Write array to a file -
 // let arr = [1, 2, 3]
 // let fileName = "file.txt"
 // let dir = FileManager.default.urls(
@@ -4253,7 +4591,8 @@ import Foundation
 // let filePath = dir.appendingPathComponent(fileName)
 // let nsArr = arr as NSArray
 // nsArr.write(to: filePath, atomically: true)
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Binary files - Read array from a file -
 // let fileName = "file.txt"
 // let dir = FileManager.default.urls(
 //     for: .documentDirectory,
@@ -4261,7 +4600,8 @@ import Foundation
 // let filePath = dir.appendingPathComponent(fileName)
 // let arr = NSArray(
 //     contentsOf: filePath)!
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Binary files - Write dictionary to a file -
 // let dic = ["1" : "one", "2" : "two"]
 // let fileName = "file.txt"
 // let dir = FileManager.default.urls(
@@ -4270,7 +4610,8 @@ import Foundation
 // let filePath = dir.appendingPathComponent(fileName)
 // let nsDic = dic as! NSMutableDictionary
 // nsDic.write(to: filePath, atomically: true)
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Binary files - Read dictionary to a file -
 // let fileName = "file.txt"
 // let dir = FileManager.default.urls(
 //     for: .documentDirectory,
@@ -4278,7 +4619,9 @@ import Foundation
 // let filePath = dir.appendingPathComponent(fileName)
 // let dic = NSMutableDictionary(
 //     contentsOf: filePath)!
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - XML files ---------------------------------
+//MARK: - Work with Files - XML files - Reading XML file -
 // //XML example:
 // //<Lines>
 // //    <Line Id="1">one</Line>
@@ -4331,7 +4674,8 @@ import Foundation
 // }
 // let xmlReader = XmlReader()
 // xmlReader.Read()
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - XML files - Write XML file (AEXML) -
 // //XML file:
 // //<Lines>
 // //    <Line Id="1">one</Line>
@@ -4360,7 +4704,8 @@ import Foundation
 // } catch(let e) {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - XML files - writing XML file -
 // //XML file:
 // //<Lines>
 // //    <Line Id="1">one</Line>
@@ -4387,7 +4732,9 @@ import Foundation
 // } catch(let e) {
 //     print(e.localizedDescription)
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Archieve - -------------------------------------
+//MARK: - Work with Files - Archieve - Packing a zip file -
 // import Zip
 // //using: https://github.com/marmelroy/Zip.git
 // //file or dir name
@@ -4404,7 +4751,8 @@ import Foundation
 // } catch {
 //     print("Error: \(error)")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Archieve - Packing a zip file with a password -
 // import Zip
 // //using: https://github.com/marmelroy/Zip.git
 // //file or dir name
@@ -4421,7 +4769,8 @@ import Foundation
 // } catch {
 //     print("Error: \(error)")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Archieve - Unpacking a zip files -
 // import Zip
 // //using: https://github.com/marmelroy/Zip.git
 // let zipFile = "data.zip"
@@ -4436,7 +4785,8 @@ import Foundation
 // } catch {
 //     print("Error: \(error)")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Work with Files - Archieve - Unpacking a zip files with password -
 // import Zip
 // //using: https://github.com/marmelroy/Zip.git
 // let zipFile = "data.zip"
@@ -4451,7 +4801,10 @@ import Foundation
 // } catch {
 //     print("Error: \(error)")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - DataBase -
+//MARK: - DataBase - Connect to the DB -
+//MARK: - DataBase - Connect to the DB - Connect to SQLite -
 // import SQLite3
 // //connect to database file "data.sqlite"
 // let dbPath = Bundle.main.path(
@@ -4474,7 +4827,8 @@ import Foundation
 //     print("\(lang): \(percent)")
 // }
 // sqlite3_finalize(pointer)
-// //-------------------------------------------------------------------------
+
+//MARK: - DataBase - Connect to the DB - Execute SQL query -
 // // Connect to the database
 // // ...
 // let sql = """
@@ -4503,7 +4857,8 @@ import Foundation
 //     let percent = sqlite3_column_double(pointer, 1)
 //     print("\(lang): \(percent)")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - DataBase - Connect to the DB - SQl query with parameter -
 // // Connect to the database
 // // ...
 // let sql = """
@@ -4525,7 +4880,8 @@ import Foundation
 //     print("\(lang): \(percent)")
 // }
 // sqlite3_finalize(pointer)
-// //-------------------------------------------------------------------------
+
+//MARK: - DataBase - Connect to the DB - Execute SQL command -
 // // Connect to the database
 // // ...
 // let sql = """
@@ -4540,7 +4896,9 @@ import Foundation
 //     print("record deletion error: \(errmsg)")
 // }
 // sqlite3_finalize(pointer)
-// //-------------------------------------------------------------------------
+
+//MARK: - Color -
+//MARK: - Color - RGB to Color -
 // let red = 51.0/255.0
 // let green = 255.0/255.0
 // let blue = 51.0/255.0
@@ -4551,7 +4909,8 @@ import Foundation
 // colorGreen = UIColor(
 //     red: red, green: green, blue: blue, alpha: 0.5)
 // print(colorGreen)
-// //-------------------------------------------------------------------------
+
+//MARK: - Color - color to RGB -
 // let orange = UIColor.orange
 // var red: CGFloat = 0
 // var green: CGFloat = 0
@@ -4562,7 +4921,8 @@ import Foundation
 // print("red is \(red*255)")
 // print("green is \(green*255)")
 // print("blue is \(blue*255)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Color - RGB to HTML Color -
 // let red = 51
 // let green = 255
 // let blue = 51
@@ -4577,7 +4937,8 @@ import Foundation
 // red, green, blue, alpha)
 // //htmlColor is #33FF3380
 // print("htmlColor is \(htmlColor)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Color - HTML color to RGB -
 // let orange = "FFC80080"
 // let x = UInt64(orange, radix: 16)!
 // let red = (x >> 24) & 0xFF
@@ -4588,7 +4949,8 @@ import Foundation
 // print("green is \(green)")
 // print("blue is \(blue)")
 // print("alpha is \(alpha)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Color - Color to HTML color -
 // let color = UIColor.blue
 // var red: CGFloat = 0
 // var green: CGFloat = 0
@@ -4605,7 +4967,10 @@ import Foundation
 // htmlColor += String(format: "%02X", Int(alpha))
 // //htmlColor is #0000FF80
 // print("htmlColor is \(htmlColor)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms -
+//MARK: - Algorithms - Search -
+//MARK: - Algorithms - Search - Linear search -
 // func search(_ arr: [Int], _ x: Int) -> Int
 // {
 //     var i = 0
@@ -4642,7 +5007,8 @@ import Foundation
 // print("result is \(result)")
 // print("seconds is \(time.components.seconds)")
 // // about 2 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms - Search - Fast Linear search -
 // func search(_ items: [Int], _ x: Int) -> Int
 // {
 //     var arr = items
@@ -4678,7 +5044,8 @@ import Foundation
 // print(result)
 // print(seconds)
 // // about 2.13 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms - Search - Binary search -
 // //works when the array is sorted
 // func search(_ arr: [Int], _ x: Int) -> Int
 // {
@@ -4720,7 +5087,8 @@ import Foundation
 // print(result)
 // print(seconds)
 // // about 0.00037 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms - Search - Interpolation search -
 // //works when the array is sorted
 // func search(_ list: [Int], _ x: Int) -> Int
 // {
@@ -4767,7 +5135,9 @@ import Foundation
 // print(result)
 // print(seconds)
 // // about 0.00039 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms - Sorting -
+//MARK: - Algorithms - Sorting -  Bubble sort -
 // // Time Complexity O(n^2)
 // // Space Complexity O(1)
 // func sort(_ arr: [Int]) -> [Int] {
@@ -4804,7 +5174,8 @@ import Foundation
 // print(sortItems)
 // print(seconds)
 // // about 2.32 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms - Sorting -  Quicksort -
 // // Time Complexity from O(n log(n)) to O(n^2)
 // // Space Complexity O(log(n))
 // func doSort(_ items: inout [Int], _ fst: Int, _ lst: Int) {
@@ -4855,7 +5226,8 @@ import Foundation
 // print(sortItems)
 // print(seconds)
 // // about 0.008698 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms - Sorting -  Counting sort -
 // // Time Complexity O(n+k)
 // // Space Complexity O(k)
 // func sort(_ arr: [Int]) -> [Int] {
@@ -4903,7 +5275,8 @@ import Foundation
 // print(sortItems)
 // print(seconds)
 // // about 0.0467 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms - Sorting -  Merge sort -
 // // Time Complexity O(n log(n)))
 // // Space Complexity O(n)ŽÓJÈ¯
 // func sort(_ data: [Int]) -> [Int] {
@@ -4951,7 +5324,8 @@ import Foundation
 // print(sortItems)
 // print(seconds)
 // // about 0.137 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Algorithms - Sorting - Redix sort -
 // // Time Complexity O(nk)
 // // Space Complexity O(n+k)
 // func listToBuckets(_ items: [Int], _ cBase: Int, _ i: Int) -> [[Int]] {
@@ -5005,7 +5379,9 @@ import Foundation
 // print(sortItems)
 // print(seconds)
 // // about 0.0515 seconds
-// //-------------------------------------------------------------------------
+
+//MARK: - Extensions -
+//MARK: - Extensions - Adding object methods-
 // import Foundation
 // class Point {
 //     var x: Double
@@ -5027,7 +5403,8 @@ import Foundation
 // let distance = p1.distanceTo(p2)
 // //distance is 1.4142
 // print(distance)
-// //-------------------------------------------------------------------------
+
+//MARK: - Extensions - Adding type methods-
 // import Foundation
 // class Point {
 //     var x: Double
@@ -5049,7 +5426,8 @@ import Foundation
 // let distance = Point.getDistance(p1, p2)
 // //distance is 1.4142
 // print(distance)
-// //-------------------------------------------------------------------------
+
+//MARK: - Extensions - Adding properties -
 // class Size {
 //     var width: Int
 //     var height: Int
@@ -5067,7 +5445,8 @@ import Foundation
 // let area = size.area
 // //area is 20
 // print("area is", area)
-// //-------------------------------------------------------------------------
+
+//MARK: - Extensions - Adding initializers -
 // class Size {
 //     var width: Int = 0
 //     var height: Int = 0
@@ -5081,7 +5460,8 @@ import Foundation
 // }
 // let size = Size(width: 4, height: 5)
 // print("size is (\(size.width), \(size.height))")
-//
+
+//MARK: - Extensions - Adding indexers -
 // extension Int {
 //     subscript(i: Int) -> Int {
 //         return self << i
@@ -5096,7 +5476,8 @@ import Foundation
 // //n2 is 1
 // print("n1 is", n1)
 // print("n2 is", n2)
-// //-------------------------------------------------------------------------
+
+//MARK: - Extensions - Adding nested types -
 // extension String {
 //     enum Kind {
 //         case empty, short, long
@@ -5116,7 +5497,8 @@ import Foundation
 // let kind = text.kind
 // //kind is .short
 // print("kind is", kind)
-// //-------------------------------------------------------------------------
+
+//MARK: - Extensions - Simple types extension -
 // extension Double {
 //     func getPow(_ i: Double) -> Double {
 //         return pow(self, i)
@@ -5138,7 +5520,8 @@ import Foundation
 // print("pow2 is", pow2)
 // print("square is", square)
 // print("str is", str)
-// //-------------------------------------------------------------------------
+
+//MARK: - Extensions - Protocol compliance -
 // class Shape {}
 // private protocol Printable {
 //     func Print()
@@ -5151,7 +5534,9 @@ import Foundation
 // }
 // let shape = Shape()
 // shape.Print()
-// //-------------------------------------------------------------------------
+
+//MARK: - Reflection (late binding) -
+//MARK: - Reflection (late binding) - Get type members -
 // protocol  IPC {
 //     func restart()
 // }
@@ -5168,7 +5553,9 @@ import Foundation
 //     let value: Any = child.value
 //     print("\(fieldName!): \(value)")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 -
+//MARK: - Changes in new version - Version 5 - Switch with result -
 // let size = "m"
 // // in version 5.9
 // let sizeRange = switch size {
@@ -5182,20 +5569,23 @@ import Foundation
 //         []
 // }
 // print("size '\(size)' is '\(sizeRange)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - "if" with result-
 // let n = (-5...5).randomElement()!
 // // in version 5.9
 // let sign = if n > 0 { "positive" } else { "negative" }
 // print("n is \(n)")
 // print("sign is '\(sign)'")
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Function back deployment-
 // @backDeployed(before: iOS 16, macOS 13, tvOS 16, watchOS 9)
 // @available(iOS 14.0, macOS 11, tvOS 14.0, watchOS 7.0, *)
 // public func someIOS16_Features() {
 //     print("some iOS16 features")
 // }
 // /*Swift 5.8 adds a new @backDeployed attribute that makes it possible to allow new APIs to be used on older versions of frameworks.*/
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - ShortHand "if let" statement -
 // let name: String? = "Mark"
 // // *** before: ***
 // if let name = name {
@@ -5205,14 +5595,16 @@ import Foundation
 // if let name {
 //     print("Hello, \(name)!")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Task.sleep -
 // // *** before: ***
 // await Task.sleep(1_000_000_000)
 // // *** in version 5.7: ***
 // try await Task.sleep(until:
 //     .now + .seconds(1),
 //     clock: .continuous)
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Collection downcasts -
 // class Vehicle { }
 // class Car: Vehicle {
 //     func test() {
@@ -5234,7 +5626,8 @@ import Foundation
 //     }
 // }
 // /*Before Swift 5.8 that would have led to the error message, “Collection downcast in cast pattern is not implemented use an explicit downcast to '[Car]' instead.”*/
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Type placeholders -
 // // *** before: ***
 // let numbers1: [String: [Character]] = [
 //     "one": ["o", "n", "e"],
@@ -5247,7 +5640,8 @@ import Foundation
 // ]
 // print("numbers1 is \(numbers1)")
 // print("numbers2 is \(numbers2)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Opaque types -
 // // *** before: ***
 // func sortOld<T: Comparable>(_ array: [T]) -> [T] {
 //     array.sorted()
@@ -5258,7 +5652,8 @@ import Foundation
 // }
 // print(sortOld([1, 3, 2]))
 // print(sort(["A", "C", "B"]))
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Weak self captures -
 // class WeakSelfCaptures: NSObject {
 //     var count = 10
 //     func example() {
@@ -5271,7 +5666,8 @@ import Foundation
 // }
 ///*
 // SE-0365 takes another step towards letting us remove self from closures by allowing an implicit self in places where a weak self capture has been unwrapped.*/
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Non-copyable structure -
 // // in version 5.9
 // struct User: ~Copyable {
 //     let name: String
@@ -5283,13 +5679,15 @@ import Foundation
 // //Error: 'pavel' used after consume
 // //print("pavel is '\(pavel.name)'"
 ///* An instance of a noncopyable type always has unique ownership, unlike normal Swift types which can be freely copied.*/
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Magic file names -
 // // *** in version 5.8: ***
 // print(#file)
 // // *** before: ***
 // print(#filePath)
 // /*#file evaluates to a string literal containing the full path to the current source file.*/
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Lazy variables -
 // lazy var map = getWeatherMap()
 // if needUpdateMaps() {
 //     print("Got weather maps:", map)
@@ -5306,7 +5704,8 @@ import Foundation
 //     return random == 1
 // }
 ///*Lift all limitations on variables in result builders (SE-0373). For example, in Swift 5.8 we can use lazy variables directly inside result builders.*/
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Consume operator -
 // var text = "hello"
 // let textCopy = consume text
 // print("textCopy is '\(textCopy)'")
@@ -5323,7 +5722,8 @@ import Foundation
 //     print("text is '\(text)'")
 // }
 // /*consume operator to end the lifetime of a variable binding */
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Regex Type -
 // // *** in version 5.7 ***
 // let data = "Alina is 25 years old"
 // let pattern = /\d+/ //<-Regex type
@@ -5333,7 +5733,8 @@ import Foundation
 // }
 // // replace age
 // print(data.replacing(pattern, with: "18"))
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Closure  Type Inference -
 // let numbers = [1, 2, 3, 4, 5]
 // // *** before: ***
 // let oldResults = numbers.map { n -> String in
@@ -5353,7 +5754,8 @@ import Foundation
 // }
 // print("oldResults is \(oldResults)")
 // print("results is \(results)")
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - Unavailable Keyword -
 // // if NOT in iOS 15
 // // *** before: ***
 // guard #available(iOS 15, *) else {
@@ -5366,7 +5768,8 @@ import Foundation
 // } else {
 //     print("iOS version 15 or higher")
 // }
-// //-------------------------------------------------------------------------
+
+//MARK: - Changes in new version - Version 5 - sleep(for:) method -
 // // *** in version 5.9: ***
 // //sleep 1 second
 // try await Task.sleep(for: .seconds(1))
